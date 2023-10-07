@@ -2,7 +2,7 @@
 
 def element_at(my_list, idx):
     # function retrieves an element at a position in a list
-    if idx < 0 and idx > len(my_list):
-        return
+    if idx < 0 or idx >= len(my_list):
+        return 
     else:
-        return ('{}'.format(my_list[idx]))
+        return my_list[idx]

@@ -3,8 +3,6 @@
 def print_matrix_integer(matrix=[[]]):
     # function prints matrix of integer
     for row in matrix:
-        for column in row:
-            if column != 0:
-                print(' ', end='')
-            print('{:d}'.format(column), end='')
+        for i, column in enumerate(row):
+            print('{:d}'.format(column), end=' ' if i < len(row) - 1 else '')
         print()

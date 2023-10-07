@@ -2,9 +2,9 @@
 
 def print_matrix_integer(matrix=[[]]):
     # function prints matrix of integer
-    for row in range(len(matrix)):
-        for column in range(len(matrix[row])):
+    for row in matrix:
+        for column in row:
             if column != 0:
                 print(' ', end='')
-            print('{:d}'.format(matrix[row][column]), end='')
+            print('{:d}'.format(column), end='')
         print()

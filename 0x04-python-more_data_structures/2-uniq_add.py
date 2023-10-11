@@ -12,4 +12,3 @@ def uniq_add(my_list):
             once_occur.append(i)
             sums += i
     return sums
-

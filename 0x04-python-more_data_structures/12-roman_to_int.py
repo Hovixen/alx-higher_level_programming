@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def rom_to_int(rom):
+def roman_to_int(rom):
     if not rom:
         return None
     rom_dic = {

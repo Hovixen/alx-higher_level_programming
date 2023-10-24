@@ -5,14 +5,14 @@ def safe_print_list_integers(my_list=[], x=[]):
     # n keeps track of the elements printed
     n = 0
     try:
-        for i in my_list:
-            if n < x:
-                try:
-                    print('{:d}'.format(i), end='')
-                    n += 1
-                except (ValueError, TypeError):
-                    pass
+        for i in range(x):
+            element = my_list[i]
+            try:
+                print('{:d}'.format(element), end='')
+                n += 1
+            except (ValueError, TypeError):
+                pass
         print()
         return n
-    except (TypeError):
+    except TypeError:
         return n

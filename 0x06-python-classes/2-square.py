@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# -*- coding: UTF-8 -*-
+
+"""
+2-square.py: is a Square class that defines a square
+"""
 class Square:
     """ A class that defines a square by its size
     """

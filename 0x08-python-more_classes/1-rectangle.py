@@ -17,7 +17,7 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self, obj_val):
+    def width(self, value):
         """ setter method to set the width value of an object """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -36,7 +36,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """ setter method to set the height value of an object """
-        if not isinstance(obj_val, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
 
         elif value < 0:

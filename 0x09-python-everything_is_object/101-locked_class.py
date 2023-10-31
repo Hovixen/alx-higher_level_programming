@@ -7,6 +7,8 @@
     is called first_name
 
 """
+
+
 class LockedClass:
     """ Class module """
     __slots__ = ("first_name")

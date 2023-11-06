@@ -1,0 +1,21 @@
+``1-my_list`` module
+=========================
+
+Using ``Mylist``
+-------------------------
+
+Importing function from module:
+	>>> T_list = __import__('1-my_list').Mylist
+
+Test1:(print sorted positive numbers)
+
+>>> my_list = T_list([3, 5, 6, 8, 0])
+>>> my_list.print_sorted()
+[0, 3, 5, 6, 8]
+
+Test2:(print sorted negative numbers)
+>>> my_list = T_list([-7, -3, -15, -1)
+>>> my_list.print_sorted()
+[-15, -7, -3, -1]
+
+

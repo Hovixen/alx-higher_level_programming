@@ -19,7 +19,7 @@ Test2:(print sorted negative numbers)
 [-15, -7, -3, -1]
 
 Test3:(print empty list)
->>> my_list = T_list([])
+>>> my_list = T_list()
 >>> my_list.print_sorted()
 []
 
@@ -50,3 +50,9 @@ Traceback (most recent call last):
 ...
 TypeError: '<' not supported between instances of 'str' and 'int'
 
+Test9:(print list when passing argument to print_sorted() function)
+>>> my_list = T_list()
+>>> my_list.print_sorted([1, 5, 7])
+Traceback (most recent call last):
+    	      ...
+TypeError: print_sorted() takes 1 positional argument but 2 were given

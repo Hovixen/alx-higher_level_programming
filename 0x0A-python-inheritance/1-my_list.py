@@ -14,7 +14,8 @@ class MyList(list):
         """
         This function sorts the list in ascending order
         """
-        sortedList = sorted(self)
+        sortedList = self.copy
+        sortedList.sort()
         listElements = []
         for elements in sortedList:
             listElements.append(elements)

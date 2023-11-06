@@ -1,5 +1,5 @@
 # Inheritance
-This project was completed during **Full Stack Software course** at **ALX_SE**. It aims to learn about inheritance, superclass, baseclass and subclass in `**Python**`.
+This project was completed during **Full Stack Software course** at **ALX_SE**. It aims to learn about inheritance, superclass, baseclass and subclass in **Python**.
 
 ## Technologies
 * Python Scripts are written with `Python 3.8.10`

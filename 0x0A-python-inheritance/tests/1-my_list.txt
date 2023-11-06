@@ -1,11 +1,11 @@
 ``1-my_list`` module
 =========================
 
-Using ``Mylist``
+Using ``MyList``
 -------------------------
 
 Importing function from module:
-	>>> T_list = __import__('1-my_list').Mylist
+	>>> T_list = __import__('1-my_list').MyList
 
 Test1:(print sorted positive numbers)
 
@@ -14,8 +14,39 @@ Test1:(print sorted positive numbers)
 [0, 3, 5, 6, 8]
 
 Test2:(print sorted negative numbers)
->>> my_list = T_list([-7, -3, -15, -1)
+>>> my_list = T_list([-7, -3, -15, -1])
 >>> my_list.print_sorted()
 [-15, -7, -3, -1]
 
+Test3:(print empty list)
+>>> my_list = T_list([])
+>>> my_list.print_sorted()
+[]
+
+Test4:(print a single element in the list)
+>>> my_list = T_list([53])
+>>> my_list.print_sorted()
+[53]
+
+Test5:(print sorted list mixed with negative and positive numbers)
+>>> my_list = T_list([5, 8, 0, -15, -1, 11])
+>>> my_list.print_sorted()
+[-15, -1, 0, 5, 8, 11]
+
+Test6:(print sorted duplicate element in the list)
+>>> my_list = T_list([3, 2, 3, 1, 1, 2])
+>>> my_list.print_sorted()
+[1, 1, 2, 2, 3, 3]
+
+Test7:(print sorted large number list)
+>>> my_list = T_list(range(100, 1, -1))
+>>> my_list.print_sorted()
+[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+
+Test8:(print list with int and other data type)
+>>> my_list = T_list([5, 4, 'boy', 2.5, [3, 1]])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'str' and 'int'
 

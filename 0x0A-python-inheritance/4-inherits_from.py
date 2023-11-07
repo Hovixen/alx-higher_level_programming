@@ -6,14 +6,13 @@ from the specified class
 
 
 def inherits_from(obj, a_class):
-    """ Function that returns True/False if obj is an instance of a_class
-
+    """
     Args:
-        obj: object
-        a_class: class type
+        obj: The object to check.
+        a_class: The class to compare against.
 
     Returns:
-        True if obj is an instance of a_class
-        False, otherwise
+        True if obj is an instance of a class that inherited from a_class;
+        False otherwise.
     """
     return isinstance(obj, a_class) and obj.__class__ != a_class

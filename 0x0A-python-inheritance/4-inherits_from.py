@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-function check an instance of a class that inherited (directly or indirectly)
-from the specified class
+"""Check if the given object is an instance of a class inherited
+(directly or indirectly) from a_class.
 """
 
 

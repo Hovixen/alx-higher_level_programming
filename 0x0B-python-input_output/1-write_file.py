@@ -15,4 +15,4 @@ def number_of_lines(filename=""):
 
     """
     with open(filename, 'r', encoding="utf-8") as f:
-        return f.write()
+        return f.write(text)

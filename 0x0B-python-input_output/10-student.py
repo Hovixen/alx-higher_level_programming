@@ -18,6 +18,8 @@ class Student:
         if attrs is None:
             return self.__dict__.copy()
         else:
+            result = {}
             for attr in attrs:
                 if hasattr(self, attr):
-                    return {attr: getattr(self, attr)}
+                    result[attr] = getattr(self,attr)
+            return result

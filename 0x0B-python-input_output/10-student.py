@@ -14,19 +14,8 @@ class Student:
 
     def to_json(self, attrs=None):
         """ Method that returns directory description """
-        obj = self.__dict__.copy()
-        if type(attrs) is list:
 
-            for item in attrs:
-                if type(item) is not str:
-                    return obj
-
-            d_list = {}
-
-            for iatr in range(len(attrs)):
-                for satr in obj:
-                    if attrs[iatr] == satr:
-                        d_list[satr] = obj[satr]
-            return d_list
-
-        return obj
+        if attrs == None:
+            return self.__dict__.copy()
+        else:
+            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}

@@ -7,7 +7,15 @@ data structure for a JSON serialization of an object
 def class_to_json(obj):
     """ Function that retuns the dictionary description of an obj """
 
-    res = {}
-    if hasattr(obj, "__dict__"):
-        res = obj.__dict__.copy()
-    return res
+    # get the copy of the object attributes
+
+    obj_attr = obj.__dict__.copy()
+
+    # create an empty sterilized dictionary
+
+    dic = {}
+    for key, value in obj_attr.items():
+        if isinstance(value, (list, dict, str, int, bool)):
+            dic[key] = value
+    return dic
+

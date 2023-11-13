@@ -13,4 +13,4 @@ if __name__ == "__main__":
     except FileNotFoundError:
         objects = []
     all_objects = objects + args
-    save_to_json_file(all_objects, "add_item.json")
+    save_file(all_objects, "add_item.json")

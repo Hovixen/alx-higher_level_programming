@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ This model contains the Base Class """
 
+
 class Base:
-    """ Base class that manages id attributes in all 
+    """ Base class that manages id attributes in all
         future class instances created """
 
     __nb_objects = 0

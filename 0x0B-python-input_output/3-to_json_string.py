@@ -15,4 +15,5 @@ def to_json_string(my_obj):
         Exception: when the object can't be encoded
 
     """
-    return json.dumps(my_obj)
+    my_obj_json = json.dumps(my_obj)
+    return my_obj_json

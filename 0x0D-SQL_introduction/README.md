@@ -3,6 +3,7 @@ This Project was completed during **Full Stack Software Engineering studies** at
 
 ## Technologies
 > `MySQL 8.0` (8.0.25-0ubuntu0.20.04.1)
+
 > Tested on `Ubuntu 20.04 LTS`
 
 ## Files

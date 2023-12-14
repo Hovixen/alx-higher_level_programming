@@ -6,4 +6,4 @@ WHERE state_id = ( -- Query to get the id of California
       FROM states
       WHERE name = "California"
 	);
-ORDER BY name ASC;
+ORDER BY id  ASC;

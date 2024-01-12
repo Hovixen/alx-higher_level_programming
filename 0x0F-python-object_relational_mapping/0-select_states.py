@@ -9,7 +9,8 @@ if __name__ == '__main__':
     import sys
     import MySQLdb
 
-    connX = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
+    connX = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                            passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
 
     cur = connX.cursor()
 
@@ -17,7 +18,7 @@ if __name__ == '__main__':
 
     rows = cur.fetchall()
 
-    ## results = [tuple(rows) for row in rows]
+    # results = [tuple(rows) for row in rows]
 
     for row in rows:
         print(row)

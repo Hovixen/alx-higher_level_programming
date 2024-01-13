@@ -24,7 +24,7 @@ if __name__ == '__main__':
     sql_query = (
             "SELECT * "
             "FROM states "
-            "WHERE name LIKE BINARY '{}' "
+            "WHERE name LIKE BINARY %s "
             "ORDER BY id ASC;"
     )
 

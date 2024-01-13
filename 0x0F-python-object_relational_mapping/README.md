@@ -1,6 +1,5 @@
 # Object-relational mapping
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f84fe6edb9436c8560996c6d72e17ea51dab28e1.jpg)
 
 This Project was completed during **Full Stack Software Engineering studies** at **ALX_SE**. It aims to learn about how to connect to a MySQL database from a Python script, what ORM means and how to map a Python Class to a MySQL table.
 

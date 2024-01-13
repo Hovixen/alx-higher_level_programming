@@ -9,13 +9,12 @@ if __name__ == '__main__':
     import sys
     import MySQLdb
 
-
     if len(sys.argv) != 5:
-        print("Usage: {} <user> <password> <database> <state>".format(sys.argv[0]))
+        print("Usage: {} <user> <password> <database>\
+              <state>".format(sys.argv[0]))
         sys.exit(1)
 
     user, passwd, db, state = sys.argv[1:5]
-
 
     connX = MySQLdb.connect(host="localhost", port=3306, user=user,
                             passwd=passwd, db=db)

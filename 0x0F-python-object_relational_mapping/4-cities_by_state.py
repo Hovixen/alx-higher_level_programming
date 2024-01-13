@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     connX = MySQLdb.connect(host="localhost", port=3306, user=user,
                             passwd=password, db=db)
-    cur= connX.cursor()
+    cur = connX.cursor()
 
     sql_query = (
             "SELECT cities.id, cities.name, states.name "

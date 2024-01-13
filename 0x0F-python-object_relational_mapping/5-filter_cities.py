@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     if len(sys.argv) != 5:
         sys.exit(1)
-    
+
     user, password, db, states = sys.argv[1:5]
 
     connX = MySQLdb.connect(host="localhost", port=3306, user=user,

@@ -1,20 +1,17 @@
 #!/usr/bin/python3
-
 """
-    Script defines a class for City
+Contains the class definition of a City
 """
-
-from model_state import Base
+from relationship_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
 
 
 class City(Base):
     """
-        Define the City attributies with id, state_id and name
+    Class that defines each city
     """
-    __tablename__ = "cities"
-    id = Column(Integer, primary_key=True, unique=True, nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
+    __tablename__ = 'cities'
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
-    state = relationship("State")
+    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)

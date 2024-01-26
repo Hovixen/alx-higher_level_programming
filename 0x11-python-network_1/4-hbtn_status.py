@@ -13,6 +13,6 @@ if __name__ == '__main__':
 
     if response.status_code == 200:
         body = response.text
-        print("Body Response:")
+        print("Body response:")
         print("\t- type: {}".format(type(body)))
     print("\t- content: {}".format(body))

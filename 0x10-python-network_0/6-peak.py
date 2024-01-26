@@ -3,6 +3,12 @@
 
 
 def find_peak(list_of_integers):
+    """
+    Find a peak in a list of unsorted integers.
+
+    :param list_of_integers: List of unsorted integers
+    :return: A peak element from the list
+    """
     if list_of_integers == []:
         return None
 

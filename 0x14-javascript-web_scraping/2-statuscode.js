@@ -6,6 +6,6 @@ const [,, arg] = process.argv;
 
 request(arg, (error, response) => {
   if (error == null) {
-    console.log('code: ', response.statusCode);
+    console.log('code: ' + response.statusCode);
   }
 });

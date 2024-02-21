@@ -16,7 +16,7 @@ request(arg, (error, response, body) => {
   let filmCount = 0;
 
   film.results.forEach((film) => {
-    if (film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)) {
+    if (film.characters.includes('https://swapi-api.alx-tools.com/api/people/' + characterId + '/')) {
       filmCount++;
     }
   });

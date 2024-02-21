@@ -20,5 +20,5 @@ request(arg, (error, response, body) => {
       filmCount++;
     }
   });
-  console.log(filmCount);
+  console.log(`${filmCount}`);
 });

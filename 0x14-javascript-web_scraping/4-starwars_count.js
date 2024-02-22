@@ -6,7 +6,7 @@ const [,, arg] = process.argv;
 
 const characterUrl = `https://swapi-api.alx-tools.com/api/people/18/`;
 
-request(arg, (error, response, body) => {
+request(arg, function (error, response, body) => {
   if (error == null) {
     const film = JSON.parse(body);
 

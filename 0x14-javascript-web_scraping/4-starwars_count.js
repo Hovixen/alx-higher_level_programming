@@ -4,7 +4,7 @@ const request = require('request');
 
 const [,, arg] = process.argv;
 
-const characterUrl = 'https://swapi-api.alx-tools.com/api/people/18';
+const characterUrl = `https://swapi-api.alx-tools.com/api/people/18/`;
 
 request(arg, (error, response, body) => {
   if (error == null) {
